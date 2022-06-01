@@ -1,4 +1,4 @@
-# power-grid-model-workshop
+# Power Grid Model Workshop
 
 # Pre-knowledge
 
