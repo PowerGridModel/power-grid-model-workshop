@@ -9,7 +9,14 @@ Participants are expected to have knowledge of
 It is recommended to read the numpy structured array 
 [documentation](https://numpy.org/doc/stable/user/basics.rec.html).
 
-# Preparation for Windows (beginners guide)
+# Preparation
+
+Please create the relevant environment before the workshop. If you encounter problems, please contact
+[Tony Xiang](https://github.com/TonyXiang8787),
+[Peter Salemink](https://github.com/petersalemink95), or
+[Bram Stoeller](https://github.com/bramstoeller).
+
+## Preparation for Windows (beginners guide)
 1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
@@ -44,7 +51,7 @@ It is recommended to read the numpy structured array
    don't get scared if you see some error messages there.
 
 
-# Next time, pick up where you left off
+## Next time, pick up where you left off
 1. Open a terminal (Windows-Key + R, type `cmd`, press **OK**) and use the `cd` (change dir) command to navigate
    to the folder where you downloaded the workshop. For example:
    ```shell
@@ -62,7 +69,7 @@ It is recommended to read the numpy structured array
     ```
 
     
-# Preparation for WSL2 or Linux (for advanced users)
+## Preparation for WSL2 or Linux (for advanced users)
 
 If you know WSL2/Linux you should be able to configure environment yourself.
 
