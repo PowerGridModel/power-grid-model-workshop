@@ -72,9 +72,13 @@ If you know WSL2/Linux you should be able to configure environment yourself.
 ```
 Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/notebooks/Power%20Flow%20Example.ipynb), try to run it. 
 
-# Support
+# License
+This project is licensed under the Mozilla Public License, version 2.0 - see [LICENSE](LICENSE) for details.
 
-Please create the relevant environment before the workshop. If you encounter problems, please contact
-[Tony Xiang](https://github.com/TonyXiang8787),
-[Peter Salemink](https://github.com/petersalemink95), or
-[Bram Stoeller](https://github.com/bramstoeller).
+# Contributing
+Please read [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) and [CONTRIBUTING](CONTRIBUTING.md) for details on the process 
+for submitting pull requests to us.
+
+# Contact
+Please read [SUPPORT](SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
+
