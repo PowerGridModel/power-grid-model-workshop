@@ -10,6 +10,9 @@ It is recommended to read the numpy structured array
 [documentation](https://numpy.org/doc/stable/user/basics.rec.html).
 
 # Preparation for Windows (beginners guide)
+
+1. [Download](https://aka.ms/vs/17/release/vc_redist.x64.exe) and install the Visual C++ Redistributable from Microsoft.
+
 1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
