@@ -15,7 +15,7 @@ It is recommended to read the numpy structured array
 
 # Preparation for Windows (beginners guide)
 
-1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
+1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/master.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
 
