@@ -19,7 +19,7 @@ It is recommended to read the numpy structured array
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
 
-1. Install the latest [Python](https://www.python.org/downloads/windows/) version.
+1. Install the latest [Python](https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe) version.
    You probably want the **Windows installer (64-bit)** under **Stable Release**.
 
 1. Now open a terminal (Windows-Key + R, type `cmd`, press **OK**) and use the `cd` (change dir) command to navigate
