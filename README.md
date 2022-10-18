@@ -75,7 +75,7 @@ If you know WSL2/Linux you should be able to configure environment yourself.
 > pip install power-grid-model jupyter pandas
 > jupyter notebook
 ```
-Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/notebooks/Power%20Flow%20Example.ipynb), try to run it. 
+Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb), try to run it. 
 
 # Support
 
