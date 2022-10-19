@@ -1,5 +1,9 @@
 # Power Grid Model Workshop
 
+The steps for workshop are to follow `Power Flow Example.ipynb` and `Power Flow Assignment.ipynb` simultaneously.
+To complete the workshop on your own, go through `Power Flow Example` notebook while completing the respective assignment from at each checkpoint.
+
+
 # Pre-knowledge
 
 Participants are expected to have knowledge of 
@@ -17,11 +21,11 @@ Please create the relevant environment before the workshop. If you encounter pro
 [Bram Stoeller](https://github.com/bramstoeller).
 
 ## Preparation for Windows (beginners guide)
-1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
+1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/master.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
 
-1. Install the latest [Python](https://www.python.org/downloads/windows/) version.
+1. Install the latest [Python](https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe) version.
    You probably want the **Windows installer (64-bit)** under **Stable Release**.
 
 1. Now open a terminal (Windows-Key + R, type `cmd`, press **OK**) and use the `cd` (change dir) command to navigate
@@ -46,7 +50,7 @@ Please create the relevant environment before the workshop. If you encounter pro
     > jupyter notebook
     ```
 1. Try any of the `.ipynb` files, for example
-   [`Power Flow Example.ipynb`](http://localhost:8888/notebooks/Power%20Flow%20Example.ipynb) and press the `>>` 
+   [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb) and press the `>>` 
    button to run the entire file. Note that the last section in the Power Flow Example is about error handling, so 
    don't get scared if you see some error messages there.
 
@@ -77,7 +81,7 @@ If you know WSL2/Linux you should be able to configure environment yourself.
 > pip install power-grid-model jupyter pandas
 > jupyter notebook
 ```
-Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/notebooks/Power%20Flow%20Example.ipynb), try to run it. 
+Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb), try to run it. 
 
 # License
 This project is licensed under the Mozilla Public License, version 2.0 - see [LICENSE](LICENSE) for details.
@@ -88,4 +92,3 @@ for submitting pull requests to us.
 
 # Contact
 Please read [SUPPORT](SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
-
