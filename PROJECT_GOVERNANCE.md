@@ -45,6 +45,7 @@ The current maintainers of this project are:
 1. Tony Xiang
 1. Peter Salemink
 1. Bram Stoeller
+2. Nitish Bharambe
 
 Any community member or Contributor can ask a question or raise an issue to the maintainers by logging a GitHub issue.
 
