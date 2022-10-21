@@ -1,4 +1,4 @@
-# power-grid-model-workshop
+# Power Grid Model Workshop
 
 The steps for workshop are to follow `Power Flow Example.ipynb` and `Power Flow Assignment.ipynb` simultaneously.
 To complete the workshop on your own, go through `Power Flow Example` notebook while completing the respective assignment from at each checkpoint.
@@ -13,8 +13,14 @@ Participants are expected to have knowledge of
 It is recommended to read the numpy structured array 
 [documentation](https://numpy.org/doc/stable/user/basics.rec.html).
 
-# Preparation for Windows (beginners guide)
+# Preparation
 
+Please create the relevant environment before the workshop. If you encounter problems, please contact
+[Tony Xiang](https://github.com/TonyXiang8787),
+[Peter Salemink](https://github.com/petersalemink95), or
+[Bram Stoeller](https://github.com/bramstoeller).
+
+## Preparation for Windows (beginners guide)
 1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/master.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
@@ -49,7 +55,7 @@ It is recommended to read the numpy structured array
    don't get scared if you see some error messages there.
 
 
-# Next time, pick up where you left off
+## Next time, pick up where you left off
 1. Open a terminal (Windows-Key + R, type `cmd`, press **OK**) and use the `cd` (change dir) command to navigate
    to the folder where you downloaded the workshop. For example:
    ```shell
@@ -67,7 +73,7 @@ It is recommended to read the numpy structured array
     ```
 
     
-# Preparation for WSL2 or Linux (for advanced users)
+## Preparation for WSL2 or Linux (for advanced users)
 
 If you know WSL2/Linux you should be able to configure environment yourself.
 
@@ -77,11 +83,12 @@ If you know WSL2/Linux you should be able to configure environment yourself.
 ```
 Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb), try to run it. 
 
-# Support
+# License
+This project is licensed under the Mozilla Public License, version 2.0 - see [LICENSE](LICENSE) for details.
 
-Please create the relevant environment before the workshop. If you encounter problems, please contact
-[Tony Xiang](https://github.com/TonyXiang8787),
-[Peter Salemink](https://github.com/petersalemink95),
-[Bram Stoeller](https://github.com/bramstoeller) or
-[Nitish Bharambe](https://github.com/nitbharambe)
+# Contributing
+Please read [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) and [CONTRIBUTING](CONTRIBUTING.md) for details on the process 
+for submitting pull requests to us.
 
+# Contact
+Please read [SUPPORT](SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
