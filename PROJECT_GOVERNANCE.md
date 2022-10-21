@@ -55,27 +55,3 @@ Contributors include anyone in the technical community that contributes code, do
 Anyone can become a contributor. 
 There is no expectation of commitment to the project, no specific skill requirements and no selection process. 
 To become a contributor, a community member simply has to perform one or more actions that are beneficial to the project.
-
-### Notable Non-Code Contributors
-
-The code contributors (who pushed commits into the repository) are automatically maintained by GitHub.
-However, many people have been contributing to this project in other forms with commiting any code, e.g., 
-developing new mathematical algorithms.
-To honor their contribution, we mention their names as non-code contributors as below:
-
-* Werner van Westering: algorithm design
-* Jacco Heres: algorithm test
-* Thijs Baaijen: test for macOS support
-
-### Historical Contributors
-
-Our gratitude goes to the following contributors who have worked (and maybe still be working) 
-in this project before it became open source:
-
-* Werner van Westering
-* Sanne Korzec
-* Jonas van den Bogaard
-* Bram Stoeller
-* Démian Janssen
-* Peter Salemink
-* Tony Xiang
