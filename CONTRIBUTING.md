@@ -28,13 +28,6 @@ information on using GitHub issues.
 
 This project follows the following [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## REUSE Compliance
-
-All the files in the repository need to be [REUSE compliant](https://reuse.software/). 
-We use the pipeline to automatically check this.
-If there are files which are not complying, the pipeline will fail the pull request will be blocked.
-
-
 ## Git branching
 
 This project uses the [GitHub flow Workflow](https://guides.github.com/introduction/flow/) and branching model. 
