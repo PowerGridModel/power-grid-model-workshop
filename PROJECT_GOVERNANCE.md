@@ -25,7 +25,7 @@ The community council consists of the following members:
 1. Werner van Westering
 1. Jonas van den Bogaard
 
-Aditya Hekker will chair the TSC.
+Tony Xiang will chair the TSC.
 
 Any community member or Contributor can ask that something 
 be reviewed by the TSC by contacting the TSC at <dynamic.grid.calculation@alliander.com>.
