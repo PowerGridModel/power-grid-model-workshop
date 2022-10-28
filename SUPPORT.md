@@ -1,12 +1,12 @@
 <!--
-SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model project <dynamic.grid.calculation@alliander.com>
+SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model workshop project <dynamic.grid.calculation@alliander.com>
 
 SPDX-License-Identifier: MPL-2.0
 -->
 
 # Getting Help
 
-There are a few ways to connect with the `power-grid-model` project:
+There are a few ways to connect with the `power-grid-model-workshop` project:
 
 * Submit an issue
 * Send an email to the Technical Steering Committee: <dynamic.grid.calculation@alliander.com>.

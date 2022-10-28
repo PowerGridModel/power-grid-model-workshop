@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model project <dynamic.grid.calculation@alliander.com>
+SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model workshop project <dynamic.grid.calculation@alliander.com>
 
 SPDX-License-Identifier: MPL-2.0
 -->
@@ -20,7 +20,6 @@ The Technical Steering Committee (TSC) is responsible for:
 1. Raise subjects/issues that are important for the direction/development of this project
 
 The community council consists of the following members:
-1. Aditya Hekker
 1. Tony Xiang
 1. Werner van Westering
 1. Jonas van den Bogaard

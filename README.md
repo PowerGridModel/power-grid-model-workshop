@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2022 Contributors to the Power Grid Model Workshop project <dynamic.grid.calculation@alliander.com>
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
 # Power Grid Model Workshop
 
 The steps for workshop are to follow `Power Flow Example.ipynb` and `Power Flow Assignment.ipynb` simultaneously.
