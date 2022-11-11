@@ -28,7 +28,7 @@ Please create the relevant environment before the workshop. If you encounter pro
 [Nitish Bharambe](https://github.com/nitbharambe).
 
 ## Preparation for Windows (beginners guide)
-1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/master.zip) (or 
+1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
 

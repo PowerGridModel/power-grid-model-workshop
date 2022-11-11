@@ -91,4 +91,4 @@ the work. For more information see the Code review guideline.
 
 This Contributing.md is adapted from Google
 available at
-https://github.com/google/new-project/blob/master/docs/contributing.md
+https://github.com/google/new-project/blob/main/docs/contributing.md
