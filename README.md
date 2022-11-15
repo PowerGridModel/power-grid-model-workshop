@@ -49,7 +49,7 @@ Please create the relevant environment before the workshop. If you encounter pro
    ```
 1. install Power Grid Model and some other packages we'll use for this workshop:
     ```shell
-    > pip install power-grid-model jupyter pandas matplotlib
+    > pip install power-grid-model jupyter pandas
     ```
 1. Now run jupyter notebook. It will probably (depending on your system) automatically open a browser at
    http://localhost:8888. If not, the console output will tell you where to find the jupyter notebook server.
