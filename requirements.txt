@@ -5,3 +5,4 @@
 power-grid-model
 jupyter
 pandas
+matplotlib
