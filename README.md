@@ -57,7 +57,7 @@ Please create the relevant environment before the workshop. If you encounter pro
     > jupyter notebook
     ```
 1. Try any of the `.ipynb` files, for example
-   [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb) and press the `>>` 
+   [`Power Flow Example.ipynb`](http://localhost:8888/notebooks/examples/Power%20Flow%20Example.ipynb) and press the `>>` 
    button to run the entire file. Note that the last section in the Power Flow Example is about error handling, so 
    don't get scared if you see some error messages there.
 
