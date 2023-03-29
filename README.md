@@ -21,14 +21,10 @@ It is recommended to read the numpy structured array
 
 # Preparation
 
-Please create the relevant environment before the workshop. If you encounter problems, please contact
-[Tony Xiang](https://github.com/TonyXiang8787),
-[Peter Salemink](https://github.com/petersalemink95),
-[Bram Stoeller](https://github.com/bramstoeller), or
-[Nitish Bharambe](https://github.com/nitbharambe).
+Please create the relevant environment before the workshop. If you encounter problems, please raise a question in the [discussion board](https://github.com/orgs/PowerGridModel/discussions)
 
 ## Preparation for Windows (beginners guide)
-1. [Download](https://github.com/alliander-opensource/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
+1. [Download](https://github.com/PowerGridModel/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
 
@@ -94,8 +90,8 @@ Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/Pow
 This project is licensed under the Mozilla Public License, version 2.0 - see [LICENSE](LICENSE) for details.
 
 # Contributing
-Please read [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) and [CONTRIBUTING](CONTRIBUTING.md) for details on the process 
+Please read [CODE_OF_CONDUCT](https://github.com/PowerGridModel/.github/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING](https://github.com/PowerGridModel/.github/blob/main/CONTRIBUTING.md) for details on the process 
 for submitting pull requests to us.
 
 # Contact
-Please read [SUPPORT](SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
+Please read [SUPPORT](https://github.com/PowerGridModel/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
