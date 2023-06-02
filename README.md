@@ -10,7 +10,7 @@ The steps for workshop are to follow `Power Flow Example.ipynb` and `Power Flow 
 To complete the workshop on your own, go through `Power Flow Example` notebook while completing the respective assignment from at each checkpoint.
 
 
-# Pre-knowledge
+## Pre-knowledge
 
 Participants are expected to have knowledge of 
 [Juypter Notebook](https://jupyter.org/) and
@@ -19,11 +19,12 @@ Participants are expected to have knowledge of
 It is recommended to read the numpy structured array 
 [documentation](https://numpy.org/doc/stable/user/basics.rec.html).
 
-# Preparation
+## Preparation
 
 Please create the relevant environment before the workshop. If you encounter problems, please raise a question in the [discussion board](https://github.com/orgs/PowerGridModel/discussions)
 
-## Preparation for Windows (beginners guide)
+### Preparation for Windows (beginners guide)
+
 1. [Download](https://github.com/PowerGridModel/power-grid-model-workshop/archive/refs/heads/main.zip) (or 
    checkout) this workshop/repository and remember the destination location. For example: 
    `C:\Users\YourUserName\Downloads\power-grid-model-workshop`.
@@ -58,7 +59,8 @@ Please create the relevant environment before the workshop. If you encounter pro
    don't get scared if you see some error messages there.
 
 
-## Next time, pick up where you left off
+### Next time, pick up where you left off
+
 1. Open a terminal (Windows-Key + R, type `cmd`, press **OK**) and use the `cd` (change dir) command to navigate
    to the folder where you downloaded the workshop. For example:
    ```shell
@@ -74,9 +76,8 @@ Please create the relevant environment before the workshop. If you encounter pro
     ```shell
     > jupyter notebook
     ```
-
     
-## Preparation for WSL2 or Linux (for advanced users)
+### Preparation for WSL2 or Linux (for advanced users)
 
 If you know WSL2/Linux you should be able to configure environment yourself.
 
@@ -84,14 +85,20 @@ If you know WSL2/Linux you should be able to configure environment yourself.
 > pip install power-grid-model jupyter pandas
 > jupyter notebook
 ```
+
 Open the jupyter notebook [`Power Flow Example.ipynb`](http://localhost:8888/Power%20Flow%20Example.ipynb), try to run it. 
 
-# License
+## License
+
 This project is licensed under the Mozilla Public License, version 2.0 - see [LICENSE](LICENSE) for details.
 
-# Contributing
+## Contributing
+
 Please read [CODE_OF_CONDUCT](https://github.com/PowerGridModel/.github/blob/main/CODE_OF_CONDUCT.md) and [CONTRIBUTING](https://github.com/PowerGridModel/.github/blob/main/CONTRIBUTING.md) for details on the process 
 for submitting pull requests to us.
 
-# Contact
+Visit [Contribute](https://github.com/PowerGridModel/power-grid-model-workshop/contribute) for a list of good first issues in this repo.
+
+## Contact
+
 Please read [SUPPORT](https://github.com/PowerGridModel/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
