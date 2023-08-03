@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
-power-grid-model
+power-grid-model >= 1.5
 jupyter
 pandas
 matplotlib
