@@ -2,7 +2,7 @@ name: Copy Example notebooks from main PGM repo to PGM-workshop
 
 on:
   schedule:
-    - cron: "25 13 * * *"
+    - cron: "45 13 * * *" # Based on UTC time
 
 jobs:
   copy-files:
