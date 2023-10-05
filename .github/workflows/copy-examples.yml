@@ -2,7 +2,7 @@ name: Copy Example notebooks from main PGM repo to PGM-workshop
 
 on:
   schedule:
-    - cron: "05 14 * * *" # Based on UTC time
+    - cron: "32 14 * * *" # Based on UTC time
 
 jobs:
   copy-files:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Copy Files
         run: |
-          cp -r /docs/examples/* $GITHUB_WORKSPACE
+          cp -r /docs/examples/ $GITHUB_WORKSPACE
 
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
