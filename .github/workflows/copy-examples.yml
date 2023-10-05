@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout PGM Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: PowerGridModel/power-grid-model
           ref: main
@@ -20,14 +20,14 @@ jobs:
           cp -r power-grid-model/docs/examples/* $GITHUB_WORKSPACE
 
       - name: Checkout PGM workshop repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: PowerGridModel/power-grid-model-workshop
           ref: feature/example-workflow
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.10   # because we mention 3.10 in the build guide 
 
