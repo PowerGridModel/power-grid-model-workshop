@@ -2,6 +2,8 @@ name: Sync example notebooks from main PGM repo to PGM-workshop
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "32 14 * * *" # Based on UTC time
 
 jobs:
   sync-files:
@@ -10,3 +12,44 @@ jobs:
     steps:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Checkout PGM Repository
+        uses: actions/checkout@v4
+        with:
+          repository: PowerGridModel/power-grid-model
+          ref: main
+
+      - name: Copy Files
+        run: |
+          cp -r /docs/examples/ $GITHUB_WORKSPACE
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10   # because we mention 3.10 in the build guide 
+
+      - name: Install Python dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate 
+          pip install -r requirements.txt
+
+      - name: Run the notebooks
+        run: |
+          source venv/bin/activate
+
+          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE.ipynb
+
+      - name: Commit and Push Changes to PGM workshop repository
+        run: |
+          git config user.name 'GitHub Action'
+          git config user.email 'action@github.com'
+          git add .
+
+          if git diff-index --quiet HEAD; then
+            echo "No changes detected."
+          else
+            git commit -m "Update PGM examples"
+            git push
