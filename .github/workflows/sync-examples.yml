@@ -15,10 +15,6 @@ jobs:
     steps:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
-        with:
-          repository: PowerGridModel/power-grid-model-workshop
-          ref: sync-examples-workflow
-          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Checkout PGM Repository
         uses: actions/checkout@v4
