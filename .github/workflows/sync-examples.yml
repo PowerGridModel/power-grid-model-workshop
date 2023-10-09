@@ -24,7 +24,7 @@ jobs:
 
       - name: Copy Files
         run: |
-          cp -r /docs/examples/ $GITHUB_WORKSPACE
+          cp -r docs/examples $GITHUB_WORKSPACE
 
       - name: Set up Python
         uses: actions/setup-python@v4
