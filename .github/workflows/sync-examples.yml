@@ -1,6 +1,10 @@
 name: Sync example notebooks from main PGM repo to PGM-workshop
 
 on:
+  push:
+    branches:
+      - sync-examples-workflow
+  pull_request:
   workflow_dispatch:
   schedule:
     - cron: "32 14 * * *" # Based on UTC time
@@ -13,6 +17,7 @@ jobs:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
         with:
+          ref: sync-examples-workflow
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Checkout PGM Repository
@@ -40,7 +45,7 @@ jobs:
         run: |
           source venv/bin/activate
 
-          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE.ipynb
+          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE
 
       - name: Commit and Push Changes to PGM workshop repository
         run: |
