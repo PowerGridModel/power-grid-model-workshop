@@ -31,6 +31,9 @@ jobs:
         with:
           python-version: 3.11   
 
+      - name: Checkout PGM workshop repository
+        uses: actions/checkout@v4
+
       - name: Install Python dependencies
         run: |
           python -m venv venv
