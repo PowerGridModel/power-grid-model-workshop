@@ -22,10 +22,23 @@ jobs:
           repository: PowerGridModel/power-grid-model
           ref: main
 
+      # - name: Copy examples to PGM-workshop repo
+      #   uses: nkoppel/push-files-to-another-repository@1.1.0
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      #   with:
+      #     source-files: 'docs/examples/'
+      #     destination-username: 'Power Grid Model'
+      #     destination-repository: 'power-grid-model-workshop'
+      #     destination-branch: 'feature/sync-examples-workflow'
+      #     destination-directory: 'examples/'
+      #     commit-email: 'action@github.com'
+
       - name: Copy Files
         run: |
-          files = cp -r docs/examples $GITHUB_WORKSPACE
-          echo files
+          cp -r docs/examples $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/examples
+          ls
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
