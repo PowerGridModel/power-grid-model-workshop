@@ -40,6 +40,10 @@ jobs:
           source venv/bin/activate 
           pip install -r requirements.txt
 
+      - name: Display $GITHUB_WORKSPACE contents
+        run: |
+          ls $GITHUB_WORKSPACE
+
       - name: Run the notebooks
         run: |
           source venv/bin/activate
