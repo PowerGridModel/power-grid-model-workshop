@@ -24,7 +24,8 @@ jobs:
 
       - name: Copy Files
         run: |
-          cp -r docs/examples $GITHUB_WORKSPACE
+          files = cp -r docs/examples $GITHUB_WORKSPACE
+          echo files
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
