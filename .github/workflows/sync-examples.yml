@@ -30,6 +30,7 @@ jobs:
       - name: Move pgm examples to pgm workshop repository
         run: |
           ls -lah
+          rm -rf examples
           mv examples .
           ls -lah
 
