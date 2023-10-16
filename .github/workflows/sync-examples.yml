@@ -15,13 +15,15 @@ jobs:
     steps:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
+        with:
+          path: power-grid-model-workshop
 
       - name: Checkout PGM Repository examples
         uses: actions/checkout@v4
         with:
           repository: PowerGridModel/power-grid-model
           ref: main
-          clean: false
+          path: power-grid-model
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
 
@@ -32,7 +34,8 @@ jobs:
       - name: Move pgm examples to pgm workshop repository
         run: |
           ls -lah
-          mv docs/examples .
+          rm -rf power-grid-model-workshop/examples
+          mv power-grid-model/docs/examples power-grid-model-workshop
           rmdir docs
           ls -lah
 
