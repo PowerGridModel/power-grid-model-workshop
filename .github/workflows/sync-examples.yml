@@ -21,24 +21,14 @@ jobs:
         with:
           repository: PowerGridModel/power-grid-model
           ref: main
+          sparse-checkout: docs/examples
+          sparse-checkout-cone-mode: false
 
-      # - name: Copy examples to PGM-workshop repo
-      #   uses: nkoppel/push-files-to-another-repository@1.1.0
-      #   env:
-      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      #   with:
-      #     source-files: 'docs/examples/'
-      #     destination-username: 'Power Grid Model'
-      #     destination-repository: 'power-grid-model-workshop'
-      #     destination-branch: 'feature/sync-examples-workflow'
-      #     destination-directory: 'examples/'
-      #     commit-email: 'action@github.com'
-
-      - name: Copy Files
+      - name: Move pgm examples to pgm workshop repository
         run: |
-          cp -r docs/examples $GITHUB_WORKSPACE
-          cd $GITHUB_WORKSPACE/examples
-          ls
+          ls -lah
+          mv examples .
+          ls -lah
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
@@ -48,9 +38,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11   
-
-      - name: Checkout PGM workshop repository
-        uses: actions/checkout@v4
 
       - name: Install Python dependencies
         run: |
