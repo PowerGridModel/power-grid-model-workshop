@@ -37,7 +37,11 @@ jobs:
           rm -rf power-grid-model-workshop/examples
           mv power-grid-model/docs/examples power-grid-model-workshop
           ls power-grid-model-workshop
-          git diff power-grid-model-workshop
+
+      - name: Git diff
+        run: |
+          git diff
+        working-directory: power-grid-model-workshop
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
