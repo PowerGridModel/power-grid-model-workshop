@@ -24,6 +24,9 @@ jobs:
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
 
+      - name: Checkout PGM workshop repository
+        uses: actions/checkout@v4
+
       - name: Move pgm examples to pgm workshop repository
         run: |
           ls -lah
