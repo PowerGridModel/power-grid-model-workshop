@@ -37,10 +37,11 @@ jobs:
           rm -rf power-grid-model-workshop/examples
           mv power-grid-model/docs/examples power-grid-model-workshop
           ls power-grid-model-workshop
+          git diff
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
-          ls $GITHUB_WORKSPACE
+          ls 
 
       - name: Set up Python
         uses: actions/setup-python@v4
