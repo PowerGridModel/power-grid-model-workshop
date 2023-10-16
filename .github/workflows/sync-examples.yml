@@ -30,7 +30,7 @@ jobs:
       - name: Move pgm examples to pgm workshop repository
         run: |
           ls -lah
-          mv docs/examples .
+          mv examples .
           ls -lah
 
       - name: Display $GITHUB_WORKSPACE contents
