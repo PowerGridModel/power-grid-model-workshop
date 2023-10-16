@@ -16,11 +16,12 @@ jobs:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
 
-      - name: Checkout PGM Repository
+      - name: Checkout PGM Repository examples
         uses: actions/checkout@v4
         with:
           repository: PowerGridModel/power-grid-model
           ref: main
+          clean: false
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
 
@@ -32,6 +33,7 @@ jobs:
         run: |
           ls -lah
           mv docs/examples .
+          rmdir docs
           ls -lah
 
       - name: Display $GITHUB_WORKSPACE contents
