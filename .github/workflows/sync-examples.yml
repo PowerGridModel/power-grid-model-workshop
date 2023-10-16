@@ -31,7 +31,7 @@ jobs:
         run: |
           ls -lah
           rm -rf examples
-          mv examples .
+          mv docs/examples .
           ls -lah
 
       - name: Display $GITHUB_WORKSPACE contents
