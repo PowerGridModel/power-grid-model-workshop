@@ -45,7 +45,7 @@ jobs:
 
       - name: Display $GITHUB_WORKSPACE contents
         run: |
-          ls 
+          ls $GITHUB_WORKSPACE/power-grid-model-workshop
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -59,11 +59,21 @@ jobs:
           pip install -r requirements.txt
         working-directory: power-grid-model-workshop
 
+      - name: Use REs to replace links
+        run: |
+          sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
+        working-directory: power-grid-model-workshop/examples
+
+      - name: Git diff
+        run: |
+          git diff
+        working-directory: power-grid-model-workshop
+
       - name: Run the notebooks
         run: |
           source venv/bin/activate
 
-          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE
+          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE/examples
         working-directory: power-grid-model-workshop
 
       - name: Commit and Push Changes to PGM workshop repository
