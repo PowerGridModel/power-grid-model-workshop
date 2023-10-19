@@ -73,7 +73,10 @@ jobs:
         run: |
           source venv/bin/activate
 
-          jupyter nbconvert --to notebook --execute $GITHUB_WORKSPACE/examples
+          find examples -name "*.ipynb"| while IFS= read -r notebook; do
+            jupyter nbconvert --execute --allow-errors --inplace "$notebook"
+          done
+
         working-directory: power-grid-model-workshop
 
       - name: Commit and Push Changes to PGM workshop repository
