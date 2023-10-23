@@ -69,8 +69,6 @@ jobs:
 
       - name: Run the notebooks
         run: |
-          source venv/bin/activate
-
           find examples -name "*.ipynb"| while IFS= read -r notebook; do
             jupyter nbconvert --execute --allow-errors --inplace "$notebook"
           done
