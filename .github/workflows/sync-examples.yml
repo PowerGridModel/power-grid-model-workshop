@@ -2,8 +2,6 @@ name: Sync example notebooks from main PGM repo to PGM-workshop
 
 on:
   push:
-    branches:
-      - sync-examples-workflow
   workflow_dispatch:
   schedule:
     - cron: "32 2 * * *" # Based on UTC time
