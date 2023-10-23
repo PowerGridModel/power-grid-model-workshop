@@ -80,11 +80,11 @@ jobs:
           git diff
         working-directory: power-grid-model-workshop
 
-      # - name: Commit and Push Changes to PGM workshop repository
-      #   uses: stefanzweifel/git-auto-commit-action@v5
-      #   with:
-      #     commit_message: Update the examples
-      #     commit_user_name: My GitHub Actions Bot
-      #     commit_user_email: my-github-actions-bot@example.org
-      #     commit_author: Author <actions@github.com> # defaults to author of the commit that triggered the run
-      #   working-directory: power-grid-model-workshop
+      - name: Commit and Push Changes to PGM workshop repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update the examples
+          commit_user_name: My GitHub Actions Bot
+          commit_user_email: my-github-actions-bot@example.org
+          commit_author: Author <actions@github.com>
+        working-directory: power-grid-model-workshop
