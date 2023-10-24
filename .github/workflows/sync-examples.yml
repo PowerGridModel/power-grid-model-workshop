@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: "32 2 * * *" # Based on UTC time
+    - cron: "0 2 * * *" # Based on UTC time
 
 jobs:
   sync-files:
@@ -29,8 +29,7 @@ jobs:
           sparse-checkout-cone-mode: false
 
       - name: Display $GITHUB_WORKSPACE contents
-        run: |
-          ls $GITHUB_WORKSPACE
+        run: ls $GITHUB_WORKSPACE
 
       - name: Move pgm examples to pgm workshop repository
         run: |
@@ -54,13 +53,11 @@ jobs:
           python-version: 3.11   
 
       - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
         working-directory: power-grid-model-workshop
 
       - name: Use REs to replace links
-        run: |
-          sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
+        run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
         working-directory: power-grid-model-workshop/examples
 
       - name: Git diff
@@ -73,7 +70,6 @@ jobs:
           find examples -name "*.ipynb"| while IFS= read -r notebook; do
             jupyter nbconvert --execute --allow-errors --inplace "$notebook"
           done
-
         working-directory: power-grid-model-workshop
 
       - name: Git diff
@@ -85,7 +81,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update the examples
-          commit_user_name: My GitHub Actions Bot
-          commit_user_email: my-github-actions-bot@example.org
-          commit_author: Author <actions@github.com>
+          commit_user_name: GitHub Actions Bot
+          commit_user_email: actions@github.com
+          commit_author: GitHub Actions Bot <actions@github.com>
         working-directory: power-grid-model-workshop
