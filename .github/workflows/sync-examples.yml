@@ -32,15 +32,6 @@ jobs:
           rm -rf power-grid-model-workshop/examples
           mv power-grid-model/docs/examples power-grid-model-workshop
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11   
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-        working-directory: power-grid-model-workshop
-
       - name: Use REs to replace links
         run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
         working-directory: power-grid-model-workshop/examples
