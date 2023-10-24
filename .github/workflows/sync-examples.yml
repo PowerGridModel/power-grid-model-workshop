@@ -77,12 +77,6 @@ jobs:
           git diff
         working-directory: power-grid-model-workshop
 
-      - name: Change working directory
-        run: cd $GITHUB_WORKSPACE/power-grid-model-workshop
-
-      - name: Display $GITHUB_WORKSPACE contents
-        run: ls $GITHUB_WORKSPACE
-
       - name: Commit and Push Changes to PGM workshop repository
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
