@@ -28,24 +28,12 @@ jobs:
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
 
-      - name: Display $GITHUB_WORKSPACE contents
-        run: ls $GITHUB_WORKSPACE
-
       - name: Move pgm examples to pgm workshop repository
         run: |
           ls power-grid-model-workshop
           rm -rf power-grid-model-workshop/examples
           mv power-grid-model/docs/examples power-grid-model-workshop
           ls power-grid-model-workshop
-
-      - name: Git diff
-        run: |
-          git diff
-        working-directory: power-grid-model-workshop
-
-      - name: Display $GITHUB_WORKSPACE contents
-        run: |
-          ls $GITHUB_WORKSPACE/power-grid-model-workshop
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -60,21 +48,11 @@ jobs:
         run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
         working-directory: power-grid-model-workshop/examples
 
-      - name: Git diff
-        run: |
-          git diff
-        working-directory: power-grid-model-workshop
-
       - name: Run the notebooks
         run: |
           find examples -name "*.ipynb"| while IFS= read -r notebook; do
             jupyter nbconvert --execute --allow-errors --inplace "$notebook"
           done
-        working-directory: power-grid-model-workshop
-
-      - name: Git diff
-        run: |
-          git diff
         working-directory: power-grid-model-workshop
 
       - name: Commit and Push Changes to PGM workshop repository
