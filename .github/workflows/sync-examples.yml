@@ -84,4 +84,3 @@ jobs:
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
           commit_author: GitHub Actions Bot <actions@github.com>
-        working-directory: power-grid-model-workshop
