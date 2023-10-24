@@ -30,10 +30,8 @@ jobs:
 
       - name: Move pgm examples to pgm workshop repository
         run: |
-          ls power-grid-model-workshop
           rm -rf power-grid-model-workshop/examples
           mv power-grid-model/docs/examples power-grid-model-workshop
-          ls power-grid-model-workshop
 
       - name: Set up Python
         uses: actions/setup-python@v4
