@@ -81,7 +81,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update the examples
-          repository: $GITHUB_WORKSPACE/power-grid-model-workshop
+          repository: power-grid-model-workshop
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
           commit_author: GitHub Actions Bot <actions@github.com>
