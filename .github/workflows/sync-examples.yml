@@ -2,11 +2,46 @@ name: Sync example notebooks from main PGM repo to PGM-workshop
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *" # Based on UTC time
 
 jobs:
   sync-files:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout PGM workshop repository
         uses: actions/checkout@v4
+        with:
+          path: power-grid-model-workshop
+
+      - name: Checkout PGM Repository examples
+        uses: actions/checkout@v4
+        with:
+          repository: PowerGridModel/power-grid-model
+          ref: main
+          path: power-grid-model
+          sparse-checkout: docs/examples
+          sparse-checkout-cone-mode: false
+
+      - name: Move pgm examples to pgm workshop repository
+        run: |
+          rm -rf power-grid-model-workshop/examples
+          mv power-grid-model/docs/examples power-grid-model-workshop
+
+      - name: Use REs to replace links
+        run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
+        working-directory: power-grid-model-workshop/examples
+
+      - name: Commit and Push Changes to PGM workshop repository
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update the examples
+          repository: power-grid-model-workshop
+          commit_options: '--signoff'
+          commit_user_name: GitHub Actions Bot
+          commit_user_email: actions@github.com
+          commit_author: GitHub Actions Bot <actions@github.com>
