@@ -6,3 +6,4 @@ power-grid-model >= 1.6.55
 jupyter
 pandas
 matplotlib
+pyarrow
