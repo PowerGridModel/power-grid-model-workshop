@@ -101,4 +101,4 @@ Visit [Contribute](https://github.com/PowerGridModel/power-grid-model-workshop/c
 
 ## Contact
 
-Please read [SUPPORT](https://github.com/PowerGridModel/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the Power Gird Model project.
+Please read [SUPPORT](https://github.com/PowerGridModel/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the Power Grid Model project.
