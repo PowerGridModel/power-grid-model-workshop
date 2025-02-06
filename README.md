@@ -6,9 +6,9 @@ SPDX-License-Identifier: MPL-2.0
 
 # Power Grid Model Workshop
 
-The steps for workshop are to follow `Power Flow Example.ipynb` and `Power Flow Assignment.ipynb` simultaneously.
+The steps for the workshop are to follow `Power Flow Example.ipynb` and `Power Flow Assignment.ipynb` simultaneously.
 To complete the workshop on your own, go through `Power Flow Example` notebook while completing the respective assignment from at each checkpoint.
-
+If you like to be guided through the workshop, please visit our [Power Grid Model Workshop](https://www.youtube.com/watch?v=Y8ejfZnnfPM) recording.
 
 ## Pre-knowledge
 
