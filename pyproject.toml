@@ -1,0 +1,16 @@
+[project]
+name = "power-grid-model-workshop"
+version = "0.1.0"
+description = "A collection of Jupyter notebooks for Power Grid Model workshops"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.1",
+    "pandas>=2.2.3",
+    "power-grid-model>=1.10.88",
+    "power-grid-model-ds[visualizer]>=1.2.4",
+]
+
+[tool.setuptools]
+packages = []
