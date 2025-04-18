@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+#
+# SPDX-License-Identifier: MPL-2.0
+
 [project]
 name = "power-grid-model-workshop"
 version = "0.1.0"
