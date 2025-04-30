@@ -1,0 +1,2 @@
+grid = ExtendedGrid.empty()
+grid
