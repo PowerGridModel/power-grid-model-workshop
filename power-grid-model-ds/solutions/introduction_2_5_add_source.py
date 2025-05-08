@@ -3,6 +3,6 @@ source = SourceArray(
     id=[501],
     node=[101],
     status=[1],
-    u_ref=[0.0]   # reference voltage or angle (0.0 as a placeholder)
+    u_ref=[1.0]
 )
 grid.append(source, check_max_id=False)
