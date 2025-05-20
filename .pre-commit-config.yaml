@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: MPL-2.0
 
-power-grid-model[doc] >= 1.9
-jupyter
-matplotlib
+repos:
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v5.0.2
+    hooks:
+      - id: reuse
