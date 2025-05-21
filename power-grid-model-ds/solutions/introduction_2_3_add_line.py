@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
-#
-# SPDX-License-Identifier: MPL-2.0
-
 # Create a line between node 101 and 102
 new_line = MyLineArray(
     id=[201],

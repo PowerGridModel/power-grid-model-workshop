@@ -1,7 +1,3 @@
-# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
-#
-# SPDX-License-Identifier: MPL-2.0
-
 def get_all_congested_routes(grid: Grid) -> list[NodeArray]:
     """Get all nodes on routes that contain an overloaded line."""
     grid.set_feeder_ids()
