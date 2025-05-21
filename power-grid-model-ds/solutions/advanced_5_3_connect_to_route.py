@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+#
+# SPDX-License-Identifier: MPL-2.0
+
 def connect_to_route(grid: Grid, connection_point: NodeArray, new_substation: NodeArray) -> None:
     """Connect the new substation node to the connection point.
     """

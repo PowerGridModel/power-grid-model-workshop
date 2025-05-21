@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+#
+# SPDX-License-Identifier: MPL-2.0
+
 def optimize_route_transfer(grid: Grid, connection_point: NodeArray, new_substation: NodeArray) -> None:
     """Attempt to optimize the route transfer moving the naturally open point (NOP) upstream towards the old substation.
     This way, the new substation will take over more nodes of the original route.

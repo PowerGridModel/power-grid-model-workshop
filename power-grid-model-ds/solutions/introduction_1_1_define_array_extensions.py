@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+#
+# SPDX-License-Identifier: MPL-2.0
+
 class MyNodeArray(NodeArray):
     _defaults = {"x": 0.0, "y": 0.0, "u": 0.0}
     x: NDArray[np.float64]
