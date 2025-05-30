@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
 # Power Grid Model DS Workshop
 
 Welcome to the **Power Grid Model DS Workshop** — an introductory guide to the [Power Grid Model DS](https://github.com/PowerGridModel/power-grid-model-ds) project. This workshop is designed to help you get familiar with the PGM-DS interface and explore its capabilities through hands-on exercises.
