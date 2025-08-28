@@ -24,6 +24,7 @@ It is recommended to read the numpy structured array
 Please create the relevant environment before the workshop. If you encounter problems, please raise a question in the [discussion board](https://github.com/orgs/PowerGridModel/discussions)
 
 ### Preparation with uv (Windows/Mac/Linux)
+
 1. Open a terminal
    - Windows: Press `Windows-Key + R`, type `cmd`, press **OK**
    - Mac/Linux: Open a terminal
@@ -64,6 +65,7 @@ for your operating system (Windows/Mac/Linux)
    http://localhost:8888. If not, the console output will tell you where to find the jupyter notebook server.
     ```shell
     uv run jupyter notebook
+    ```
 
 ## License
 
