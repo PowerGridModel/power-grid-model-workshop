@@ -1791,7 +1791,7 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.1" },
     { name = "pandas", specifier = ">=2.2.3" },
-    { name = "power-grid-model", extras = ["doc"], specifier = ">=1.10.88" },
+    { name = "power-grid-model", extras = ["doc"], specifier = ">=1.12.0" },
     { name = "power-grid-model-ds", extras = ["visualizer"], specifier = ">=1.2.4" },
 ]
 
