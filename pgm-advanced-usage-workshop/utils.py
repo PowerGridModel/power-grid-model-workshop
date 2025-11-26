@@ -12,7 +12,7 @@ import pandas as pd
 
 # Polling-backed variant to capture short-lived peaks
 import threading
-import time as _time
+import time
 
 
 class Timer:
@@ -21,11 +21,11 @@ class Timer:
         self.start = None
 
     def __enter__(self):
-        self.start = _time.perf_counter()
+        self.start = time.perf_counter()
 
     def __exit__(self, *args):
         print(
-            f"Execution time for {self.name} is {(_time.perf_counter() - self.start):0.6f} s"
+            f"Execution time for {self.name} is {(time.perf_counter() - self.start):0.6f} s"
         )
 
 
@@ -132,7 +132,7 @@ class LoggedPerformanceMonitor(PerformanceMonitor):
 
     def __enter__(self):
         # start timer and memory monitor
-        self._start_time = _time.perf_counter()
+        self._start_time = time.perf_counter()
         self._start_mem = self.memory_monitor.process.memory_info().rss / 1024 / 1024
         self.timer.__enter__()
         self.memory_monitor.__enter__()
@@ -140,7 +140,7 @@ class LoggedPerformanceMonitor(PerformanceMonitor):
 
     def __exit__(self, *args):
         # capture end values and delegate to base
-        end_time = _time.perf_counter()
+        end_time = time.perf_counter()
         self.timer.__exit__(*args)
         self.memory_monitor.__exit__(*args)
         end_mem = self.memory_monitor.process.memory_info().rss / 1024 / 1024
@@ -168,7 +168,7 @@ class PollingLoggedPerformanceMonitor(LoggedPerformanceMonitor):
             cur = proc.memory_info().rss / 1024 / 1024
             if cur > self.memory_monitor.peak_memory:
                 self.memory_monitor.peak_memory = cur
-            __time.sleep(self.poll_interval)
+            time.sleep(self.poll_interval)
 
     def __enter__(self):
         # start base enter first to initialize memory_monitor
