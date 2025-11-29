@@ -1,16 +1,20 @@
+"""
+Sample code to demonstrate tIme and memory Usage.
 
-# For memory monitoring
+Disclaimer: 
+The tools below except Timer are AI generated and not scrutinized adequately.
+Their purpose is to demonstrate only possibilities.
+"""
+
 import psutil
 import gc
 import os
-from collections import Counter
 
 import psutil
 import gc
 import os
 import pandas as pd
 
-# Polling-backed variant to capture short-lived peaks
 import threading
 import time
 
@@ -27,8 +31,6 @@ class Timer:
         print(
             f"Execution time for {self.name} is {(time.perf_counter() - self.start):0.6f} s"
         )
-
-
 
 
 class MemoryMonitor:
@@ -149,8 +151,6 @@ class LoggedPerformanceMonitor(PerformanceMonitor):
         self.logger.log(
             self.name, self._start_time, end_time, self._start_mem, end_mem, peak_mem
         )
-
-
 
 
 class PollingLoggedPerformanceMonitor(LoggedPerformanceMonitor):
