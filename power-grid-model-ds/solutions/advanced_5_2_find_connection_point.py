@@ -7,5 +7,5 @@ def find_connection_point(route: NodeArray, new_substation: NodeArray) -> NodeAr
     distances = (x_difference**2 + y_difference**2) ** 0.5
     
     idx_closest_node = np.argmin(distances)
-    closest_node = route[idx_closest_node]
+    closest_node = route[idx_closest_node.item()]
     return closest_node
