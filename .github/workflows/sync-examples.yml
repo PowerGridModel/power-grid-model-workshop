@@ -21,6 +21,7 @@ jobs:
         with:
           client-id: ${{ secrets.RELEASE_BOT_APP_ID }}
           private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
+          repositories: power-grid-model-workshop
 
       - name: Checkout PGM workshop repository
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
@@ -36,7 +37,6 @@ jobs:
           path: power-grid-model
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
-          token: ${{ steps.generate-token.outputs.token }}
 
       - name: Move pgm examples to pgm workshop repository
         run: |
