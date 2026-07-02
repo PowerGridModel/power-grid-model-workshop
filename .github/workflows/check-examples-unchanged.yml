@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: Contributors to the Power Grid Model project <powergridmodel@lfenergy.org>
+#
+# SPDX-License-Identifier: MPL-2.0
+
+name: Check examples folder unchanged
+
+on:
+  pull_request:
+    paths:
+      - 'examples/**'
+
+jobs:
+  check-examples:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - name: Check if examples folder was modified
+        run: |
+          if git diff --name-only origin/main...HEAD | grep -q '^examples/'; then
+            echo "❌ The examples folder should not be manually modified."
+            echo "PGM Examples are automatically synced from the main power-grid-model repository."
+            exit 1
+          else
+            echo "✅ No changes to examples folder detected."
+          fi
