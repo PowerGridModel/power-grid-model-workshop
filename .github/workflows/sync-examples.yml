@@ -12,14 +12,16 @@ on:
 jobs:
   sync-files:
     runs-on: ubuntu-latest
+    environment: release
 
     steps:
       - name: generate GitHub App token
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: generate-token
         with:
-          app-id: ${{ secrets.CI_BOT_APP_ID }}
-          private-key: ${{ secrets.CI_BOT_PRIVATE_KEY }}
+          client-id: ${{ secrets.RELEASE_BOT_APP_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
+          repositories: power-grid-model-workshop
 
       - name: Checkout PGM workshop repository
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -35,7 +37,6 @@ jobs:
           path: power-grid-model
           sparse-checkout: docs/examples
           sparse-checkout-cone-mode: false
-          token: ${{ steps.generate-token.outputs.token }}
 
       - name: Move pgm examples to pgm workshop repository
         run: |
@@ -47,7 +48,7 @@ jobs:
         working-directory: power-grid-model-workshop/examples
 
       - name: Commit and Push Changes to PGM workshop repository
-        uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
+        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
           commit_message: Update the examples
           repository: power-grid-model-workshop

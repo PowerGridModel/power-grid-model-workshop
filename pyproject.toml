@@ -10,10 +10,10 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "jupyter>=1.1.1",
-    "matplotlib>=3.10.1",
+    "matplotlib>=3.11.0",
     "pandas>=2.2.3",
     "power-grid-model[doc]>=1.13.106",
-    "power-grid-model-ds[visualizer]>=1.2.4",
+    "power-grid-model-ds[visualizer]>=1.10.1",
 ]
 
 [tool.setuptools]
