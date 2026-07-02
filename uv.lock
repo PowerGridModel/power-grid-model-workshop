@@ -1613,16 +1613,16 @@ wheels = [
 
 [[package]]
 name = "power-grid-model-ds"
-version = "1.9.4"
+version = "1.10.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
     { name = "power-grid-model" },
     { name = "rustworkx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d1/e1/9ff86317d8d9825c755b82581fdf1f890923372b5988e3cbe996e5800ee2/power_grid_model_ds-1.9.4.tar.gz", hash = "sha256:c07afa7fe0904e083d266e54d48970b010a7dd9ad3d4ebf1c53b44174f4bb8e8", size = 71050, upload-time = "2026-05-13T16:57:51.414Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/8b/f0e7b627ebf5e88581b8ec9a1c2de83167752a62346eda3eb0e5ed32533c/power_grid_model_ds-1.10.1.tar.gz", hash = "sha256:63e66d83410c8a2cb1c0484416420f6a78b1ada2c6c7477d0f9567058af46e2f", size = 75284, upload-time = "2026-06-24T09:13:35.011Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/52/6b/72726235f9e849d14582810a9ad5f002091d14ac2a787e8979041691a7d1/power_grid_model_ds-1.9.4-py3-none-any.whl", hash = "sha256:9defe1ca46f5ddf9e50ad215c34615afaa46e2aeed85097ccf81d2a9a6faa3e0", size = 103652, upload-time = "2026-05-13T16:57:49.249Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/09/9b26ef84ae33446ef350c0a19405b5ed89ffda2b1639b20d25adb4f53e04/power_grid_model_ds-1.10.1-py3-none-any.whl", hash = "sha256:c894a0ea5821ba882432cb20c70b5c7c82848a4d4446015fc8f8c84df607f188", size = 107672, upload-time = "2026-06-24T09:13:33.631Z" },
 ]
 
 [package.optional-dependencies]
@@ -1651,7 +1651,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "power-grid-model", extras = ["doc"], specifier = ">=1.12.0" },
-    { name = "power-grid-model-ds", extras = ["visualizer"], specifier = ">=1.2.4" },
+    { name = "power-grid-model-ds", extras = ["visualizer"], specifier = ">=1.10.1" },
 ]
 
 [[package]]
