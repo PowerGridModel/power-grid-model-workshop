@@ -13,7 +13,7 @@ dependencies = [
     "matplotlib>=3.11.0",
     "pandas>=2.2.3",
     "power-grid-model[doc]>=1.13.106",
-    "power-grid-model-ds[visualizer]>=1.10.1",
+    "power-grid-model-ds[visualizer]>=1.10.2",
 ]
 
 [tool.setuptools]
