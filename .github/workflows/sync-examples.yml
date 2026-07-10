@@ -19,8 +19,8 @@ jobs:
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         id: generate-token
         with:
-          client-id: ${{ secrets.RELEASE_BOT_APP_ID }}
-          private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
+          client-id: ${{ secrets.CI_BOT_APP_ID }}
+          private-key: ${{ secrets.CI_BOT_PRIVATE_KEY }}
           repositories: power-grid-model-workshop
 
       - name: Checkout PGM workshop repository
@@ -47,12 +47,16 @@ jobs:
         run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
         working-directory: power-grid-model-workshop/examples
 
-      - name: Commit and Push Changes to PGM workshop repository
-        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
+      - name: create pull request
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
-          commit_message: Update the examples
-          repository: power-grid-model-workshop
-          commit_options: '--signoff'
-          commit_user_name: GitHub Actions Bot
-          commit_user_email: actions@github.com
-          commit_author: GitHub Actions Bot <actions@github.com>
+          commit-message: "Update the examples"
+          branch: "update/examples"
+          title: "Update the examples from power-grid-model"
+          body: "This PR updates the example notebooks from the main PGM repository."
+          labels: "sync-examples"
+          signoff: true
+          sign-commits: true
+          delete-branch: true
+          base: ${{ github.head_ref }}
+          token: ${{ steps.generate-token.outputs.token }}
