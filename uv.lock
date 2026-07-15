@@ -1596,19 +1596,19 @@ wheels = [
 
 [[package]]
 name = "power-grid-model"
-version = "1.13.109"
+version = "1.13.119"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/30/df518743e35d1c727fcc58b52ec7d1ae31795ba2b2001884212be8181354/power_grid_model-1.13.109.tar.gz", hash = "sha256:a7a5e1ba76318e04a4531839b82024cc8458584b175fe9c758d4465c0e91eda8", size = 1524117, upload-time = "2026-07-07T17:37:16.27Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/b5/7a6c7f7115f1f82c6bb245ff993169733f0217d0d304d2ff2edf1e205c3d/power_grid_model-1.13.119.tar.gz", hash = "sha256:f4464b2ee3a4d9a89bba9c6bf9c70febc0aee35d7767f23ff0ab8098234d3025", size = 1549615, upload-time = "2026-07-15T13:10:01.934Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c0/55/ffb81eb25589dc0f77b662f04847965a277f28e2aaf7873afccad2cea0ac/power_grid_model-1.13.109-py3-none-macosx_13_0_arm64.whl", hash = "sha256:aff3a5df9384d71968b70376af46b5e3058781a60614556e1f2a6b4fe023d3f6", size = 2133088, upload-time = "2026-07-07T17:37:05.262Z" },
-    { url = "https://files.pythonhosted.org/packages/34/c9/4eeb9cc1557cda294336707ab80de3258dea85298c1105e210f0daa49983/power_grid_model-1.13.109-py3-none-macosx_13_0_x86_64.whl", hash = "sha256:251776c425a3bc3861573168fc1687ccdb296a7d615aaec78e364429f54ac20a", size = 2430073, upload-time = "2026-07-07T17:37:07.894Z" },
-    { url = "https://files.pythonhosted.org/packages/8b/63/d1a889a8ec027b35ca9afa94ed66a7afca2d5a32c7bc12a49d21e7a84dc3/power_grid_model-1.13.109-py3-none-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:c2687745f6f4ad1b88cc6c9e83d67f9aaa05f7cf5c834dfca0c9371467b14812", size = 2924673, upload-time = "2026-07-07T17:37:09.285Z" },
-    { url = "https://files.pythonhosted.org/packages/75/60/ea81a7c9cfeafd7bb1a39c2771a6f6720ac7ebd4dc2d3d96bbf60f14702e/power_grid_model-1.13.109-py3-none-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:61746b1cf47da9ff12ac6fb97119780544d74e27ca4373b9a0901ba532e27dad", size = 3188577, upload-time = "2026-07-07T17:37:10.891Z" },
-    { url = "https://files.pythonhosted.org/packages/94/04/359d5bc2a083fb5658cc70b1c338c65bc3a1e2ab1e5b89ca3fbc81735150/power_grid_model-1.13.109-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:05255e4449a76de7e41df81b30b5f4c6d48d2771769c271af79fbf1233e152ae", size = 3950211, upload-time = "2026-07-07T17:37:12.732Z" },
-    { url = "https://files.pythonhosted.org/packages/64/5c/bdbb8701556d030c4be6a9df465a3eb387be72c8144e00e88622b246d6d8/power_grid_model-1.13.109-py3-none-win_amd64.whl", hash = "sha256:38beea409a58daab77f4c82dcf6aed4987bd393824da984fbc63db72224d0ca4", size = 882864, upload-time = "2026-07-07T17:37:14.45Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/0a/92abbbe67ce69a971dc4296389a69e579db373f890f569981272ce368cfb/power_grid_model-1.13.119-py3-none-macosx_13_0_arm64.whl", hash = "sha256:6beccc9484c938ee849d04970d3646f0adf45cbf11c3cdeb26c39032ac1c2c8b", size = 2133906, upload-time = "2026-07-15T13:09:49.038Z" },
+    { url = "https://files.pythonhosted.org/packages/83/8b/e9f5a5065c8c30cb1e4674611e14ccd2fe9bef3a965117fd617385d05b5e/power_grid_model-1.13.119-py3-none-macosx_13_0_x86_64.whl", hash = "sha256:a01e4d7b414bd165db02c15c19a3e6006e2b9276045b682cce594ca42c55dfca", size = 2430874, upload-time = "2026-07-15T13:09:52.029Z" },
+    { url = "https://files.pythonhosted.org/packages/d6/b1/47dd0b3aa97c4cf07ce704252cfba96c5ad73a93c78187dcb02e4d86d1e7/power_grid_model-1.13.119-py3-none-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:a91653e166f3c04f1ba6744801b01b103d3c91e1c20b8be5f26bee2fbe950af2", size = 2925401, upload-time = "2026-07-15T13:09:53.976Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/38/847050e7cc2dd3dfa43d98d65cb4996a209eeee54beea4c5983e014d0f52/power_grid_model-1.13.119-py3-none-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1df8154321d9103dc530e22ca5e661bfca61b69e0cba842e98afdb4320b83586", size = 3188927, upload-time = "2026-07-15T13:09:55.963Z" },
+    { url = "https://files.pythonhosted.org/packages/76/c6/f4996925fa3eab8b664ae3f2b3f58dafc494994ee238b62cd4c09c84aa46/power_grid_model-1.13.119-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:da0ecae09a864e463ef0b02c4724462ce7467e12eb9f86bb269b8513345a8c95", size = 3950926, upload-time = "2026-07-15T13:09:57.825Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/6d/004a9284b90e90ca6edebb453bd18708e22502e62cd365b7d61bc6a465c4/power_grid_model-1.13.119-py3-none-win_amd64.whl", hash = "sha256:77a010acbd4d5a84bc79aa9bb525f3780a9ac94af373d66de570f1449c75a55d", size = 883254, upload-time = "2026-07-15T13:10:00.12Z" },
 ]
 
 [[package]]
@@ -1650,7 +1650,7 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "pandas", specifier = ">=2.2.3" },
-    { name = "power-grid-model", extras = ["doc"], specifier = ">=1.13.109" },
+    { name = "power-grid-model", extras = ["doc"], specifier = ">=1.13.119" },
     { name = "power-grid-model-ds", extras = ["visualizer"], specifier = ">=1.10.2" },
 ]
 
