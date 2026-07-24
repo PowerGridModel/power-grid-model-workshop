@@ -21,8 +21,8 @@ jobs:
           client-id: ${{ secrets.CI_BOT_APP_ID }}
           private-key: ${{ secrets.CI_BOT_PRIVATE_KEY }}
           repositories: power-grid-model-workshop
-          permissions-contents: write
-          permissions-pull-requests: write
+          permission-contents: write
+          permission-pull-requests: write
 
       - name: Checkout PGM workshop repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
