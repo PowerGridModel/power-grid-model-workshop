@@ -16,5 +16,12 @@ dependencies = [
     "power-grid-model-ds[visualizer]>=1.10.2",
 ]
 
+dev = [
+    "reuse[charset-normalizer,chardet]", # license check
+]
+
 [tool.setuptools]
 packages = []
+
+[tool.uv]
+exclude-newer = "7 days"

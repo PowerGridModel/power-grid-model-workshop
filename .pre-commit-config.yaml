@@ -3,7 +3,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 repos:
-  - repo: https://github.com/fsfe/reuse-tool
-    rev: v5.0.2
+  - repo: local
     hooks:
       - id: reuse
+        name: reuse
+        entry: uv run --frozen reuse lint
+        language: system
+        pass_filenames: false
