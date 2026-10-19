@@ -42,7 +42,7 @@ jobs:
       - name: Move pgm examples to pgm workshop repository
         run: |
           rm -rf power-grid-model-workshop/examples
-          mv power-grid-model/docs/example_notebooks power-grid-model-workshop
+          mv power-grid-model/docs/example_notebooks/* power-grid-model-workshop/examples/
 
       - name: Use REs to replace links
         run: sed -i 's|\.\./\(.*\)\.md|https://power-grid-model.readthedocs.io/en/stable/\1.html|g' *.ipynb
